@@ -1,0 +1,15 @@
+﻿<Window x:Class="Selector.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Selector"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="155,64,0,0" VerticalAlignment="Top" Width="135" Click="Button_Click"/>
+        <ListBox x:Name="lstAllStudents" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="35,135,495,165" Width="NaN" Height="NaN"/>
+        <ListBox x:Name="lstGroup" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="360,135,170,165" Width="NaN" Height="NaN"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="360,64,0,0" VerticalAlignment="Top" Width="135" RenderTransformOrigin="0.519,-0.248" Height="20" Click="Button_Click_1"/>
+    </Grid>
+</Window>
